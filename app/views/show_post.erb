@@ -1,0 +1,17 @@
+<div class="container">
+  <h1>Edit the body of this Post!</h1>
+
+
+Title:  <%=@current_post.title%><br>
+
+Current Body:  <%=@current_post.body%><br><br>
+
+<!-- <form method= 'post' value='new_post' placeholder = 'Enter the new text for your post'> -->
+
+
+ <form method='post' action='/show_posts'>
+    <input type='text' placeholder='Enter new text for your post'  name='new_body'>
+    <input type='hidden' name='post_title' value='<%= @current_post.title %>'>
+    <input type='submit' value='Send' ><br>
+  </form>
+

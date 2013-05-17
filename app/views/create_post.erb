@@ -1,0 +1,22 @@
+<div class="container">
+  <h1>Enter Your Brand New Post!</h1>
+  <p> Tag it too!</p>
+
+  <form method='post' action='/create_post'>
+    <label>Title
+      <input type='text' placeholder='Post Title' name='post[title]' autofocus >
+    </label>
+    <br>
+    <label>Body
+      <input type='text' placeholder='Post Body' name='post[body]'>
+    </label>
+    <br>
+    <label>Tags
+      <input type='text' placeholder='Tag for this Post' name='post[tag_names]'>
+    </label>
+    <br>
+    <input type='submit' value='Submit this Post'>
+  </form>
+
+  <a href="/">Home</a>
+</div> 

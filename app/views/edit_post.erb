@@ -1,0 +1,19 @@
+
+ Pick A Post to Edit
+ <br>
+ <br>
+ 
+  <% @posts.each do |cat| %>
+    <a href="/<%=cat.title%>">
+    <br>
+    Title: <%=cat.title%></a>
+    Post:  <%=cat.body%>
+    
+      <br><br>
+    <% end %>
+    <br>
+
+
+  <form method='get' action='/'>
+    <input type='submit' value='Go to Homepage'>
+  </form>  

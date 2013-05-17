@@ -1,0 +1,9 @@
+<div class="container">
+  <% @posts.each do |post| %>
+    <section class="post">
+      <h1><%= post.title %></h1>
+      <%= post.body %>
+    </section>
+  <% end %>
+  <a href="/">Home</a>
+</div>

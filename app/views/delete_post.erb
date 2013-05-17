@@ -1,0 +1,19 @@
+Pick A Post to Delete
+ <br>
+ <br>
+
+  <form method='post' action='/delete_post/THISISWRONG'>
+    
+
+  <%@posts.each do |p| %>
+  <li>
+   <input type='checkbox' name='dog' value='<%p.title%>'><%=p.title%>
+   <li>
+  <%end%>
+  <input type='submit' value='Delete this Post'><br>
+  </form>
+
+
+  <form method='get' action='/'>
+    <input type='submit' value='Go to Homepage'>
+  </form>  
